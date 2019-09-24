@@ -1,6 +1,7 @@
 package com.trackmanagement.processor;
 
 import com.trackmanagement.model.Talk;
+import com.trackmanagement.util.Logger;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,13 +12,9 @@ import java.util.List;
 
 
 public class InputReader {
+    private static Logger logger = Logger.getLogger();
 
-    private List<Talk> talkList;
     private int totalInputTalktimeinMins;
-
-    public List<Talk> getTalkList() {
-        return talkList;
-    }
 
     public int getTotalInputTalktimeinMins() {
         return totalInputTalktimeinMins;
@@ -26,14 +23,13 @@ public class InputReader {
     public List<Talk> getInputListofTalk(String fileName) {
 
         InputStream in = this.getClass().getResourceAsStream(fileName);
+        List<Talk >talkList = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
-
-            talkList = new ArrayList<>();
             String line;
             int numTime;
             while ((line = reader.readLine()) != null) {
-                int lastBlank = line.lastIndexOf(" ");
+                int lastBlank = line.lastIndexOf(' ');
                 String title = line.substring(0, lastBlank);
                 String time = line.substring(lastBlank + 1);
                 if (time.equals("lightning")) {
@@ -48,7 +44,7 @@ public class InputReader {
                 talkList.add(talk);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         return talkList;
     }

@@ -1,0 +1,45 @@
+[INFO]: Track 1:
+[INFO]: 09:00AM Enterprise Design Patters 140min
+[INFO]: 11:20AM Spark 40min
+[INFO]: 12:00PM Lunch 60min
+[INFO]: 01:00PM Phyton for Begineer 150min
+[INFO]: 03:30PM UI Framework 65min
+[INFO]: 04:35PM Entity Domain Identification 25min
+[INFO]: 05:00PM Networking Event 60min
+[INFO]: Track 2:
+[INFO]: 09:00AM Scala for Dummy 120min
+[INFO]: 11:00AM Communicating Over Distance 60min
+[INFO]: 12:00PM Lunch 60min
+[INFO]: 01:00PM Testing Framework 135min
+[INFO]: 03:15PM Writing Fast Tests Against Enterprise Rails 60min
+[INFO]: 04:15PM Java Evolution 45min
+[INFO]: 05:00PM Networking Event 60min
+[INFO]: Track 3:
+[INFO]: 09:00AM Overdoing it in Python 45min
+[INFO]: 09:45AM Ruby Errors from Mismatched Gem Versions 45min
+[INFO]: 10:30AM Common Ruby Errors 45min
+[INFO]: 11:15AM Accounting-Driven Development 45min
+[INFO]: 12:00PM Lunch 60min
+[INFO]: 01:00PM Rails Magic 60min
+[INFO]: 02:00PM Ruby on Rails: Why We Should Move On 60min
+[INFO]: 03:00PM Ruby on Rails Legacy App Maintenance 60min
+[INFO]: 04:00PM WebServices in SpringBoot 45min
+[INFO]: 04:45PM Senior SIO event (invite only) 15min
+[INFO]: 05:00PM Networking Event 60min
+[INFO]: Track 4:
+[INFO]: 09:00AM Programming in the Boondocks of Seattle 30min
+[INFO]: 09:30AM Ruby vs. Clojure for Back-End Development 30min
+[INFO]: 10:00AM A World Without HackerNews 30min
+[INFO]: 10:30AM User Interface CSS in Rails Apps 30min
+[INFO]: 11:00AM Some Little Light 10min
+[INFO]: 11:10AM Some Light lightning
+[INFO]: 11:15AM Rails for Python Developers lightning
+[INFO]: 12:00PM Lunch 60min
+[INFO]: 01:00PM Pair Programming vs Noise 45min
+[INFO]: 01:45PM Clojure Ate Scala (on my project) 45min
+[INFO]: 02:30PM BigData 35min
+[INFO]: 03:05PM Lua for the Masses 30min
+[INFO]: 03:35PM Woah 30min
+[INFO]: 04:05PM Sit Down and Write 30min
+[INFO]: 04:35PM Database Session 25min
+[INFO]: 05:00PM Networking Event 60min

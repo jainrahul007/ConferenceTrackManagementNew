@@ -10,7 +10,6 @@ public class SessionConfiguration {
     public static final int MORNING_SESSION_DURATION = 180;
     public static final int AFTERNOON_SESSION_DURATION = 240;
 
-
     public enum SessionType {
         MORNING,
         AFTERNOON

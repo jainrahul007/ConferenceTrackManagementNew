@@ -12,7 +12,6 @@ public class Session {
     private List<Talk> talkList;
     private SessionConfiguration.SessionType sessionType;
     private int totalSessionTimeinMins;
-    private int currentSessionTime;
 
     public Session(SessionType sessionType) {
 
@@ -40,16 +39,6 @@ public class Session {
         return totalSessionTimeinMins;
     }
 
-    public boolean addToSession(Talk talk) {
-        if (this.currentSessionTime + talk.getTalkTimeinMins() > this.totalSessionTimeinMins)
-            return false;
-
-        this.talkList.add(talk);
-        this.currentSessionTime += talk.getTalkTimeinMins();
-
-        return true;
-
-    }
 }
 
 

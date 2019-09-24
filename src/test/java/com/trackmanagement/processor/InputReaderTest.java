@@ -1,7 +1,6 @@
 package com.trackmanagement.processor;
 
 import com.trackmanagement.model.Talk;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,21 +12,28 @@ class InputReaderTest {
 
     private InputReader inputReader;
 
-
     @BeforeEach
     void setUp() {
         inputReader = new InputReader();
     }
 
     @Test
-    void getInputListofTalk() {
-        List<Talk> inputTalkMap = inputReader.getInputListofTalk("/talk-input.txt");
+    void testGetInputListofTalk() {
+        List<Talk> inputTalkList = inputReader.getInputListofTalk("/talk-input.txt");
 
         assertEquals(785, inputReader.getTotalInputTalktimeinMins());
+        assertEquals(19, inputTalkList.size());
     }
 
-    @AfterEach
-    void tearDown() {
+    @Test
+    void testGetEmptyInputListofTalk() {
+        List<Talk> inputTalkList = inputReader.getInputListofTalk("/talk-input-empty.txt");
+        assertEquals(0, inputReader.getTotalInputTalktimeinMins());
     }
 
+    @Test
+    void testGetAdditionalInputListofTalk() {
+        List<Talk> inputTalkList = inputReader.getInputListofTalk("/talk-input-additionaltime.txt");
+        assertEquals(1085, inputReader.getTotalInputTalktimeinMins());
+    }
 }

@@ -1,6 +1,6 @@
 package com.trackmanagement.helper;
 
-public class StringConstants {
+public  class StringConstants {
     public static final String LIGHTNING = "lightning";
     public static final String MINUTE = "min";
     public static final String LUNCH = "Lunch";
